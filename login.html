@@ -9,12 +9,32 @@
 </head>
 <body>
   <main>
-    <article>
-      <div>
+    <section class="card">
+      <div class="log-in-form">
+        <div class="hello">
+          <h1>¡Hola!</h1>
+          <p>Te estábamos esperando.</p>
+        </div>
+        <form action="javascript:void(0)">
+          <div class="field">
+            <label for="user-mail" class="form-label">Mail</label>
+            <input type="email" placeholder="Ingrese su mail" id="user-mail" required>
+            <small class="invalid-alert">Ingrese un  mail válido</small>
+          </div>
+          <div class="field">
+            <label for="user-pass" class="form-label">Contraseña</label>
+            <input type="password" placeholder="Ingrese su contraseña" id="user-pass" required minlength="8">
+            <small class="invalid-alert">La contraseña debe tener al menos 8 caracteres</small>
+          </div>
+          <div class="field">
+            <button type="submit">Ingresar</button>
+            <small>¿No tenés una cuenta? <a href="https://google.com">Registrate.</a></small>
+          </div>
+        </form>
 
       </div>
       <img src="imgs/img1.png" alt="computer-kitten">
-    </article>
+    </section>
   </main>
 </body>
 </html>
